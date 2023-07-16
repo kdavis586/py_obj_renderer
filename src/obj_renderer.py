@@ -11,8 +11,9 @@ def main(argv) -> None:
     obj_path = argv[1]
     model = Obj(obj_path)
 
+    
     if 'DISPLAY' in os.environ:
-        del os.environ['DISPLAY']
+        del os.environ['DISPLAY'] # Rid CreateDC error 
     glutInit()
     glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE | GLUT_DEPTH)
     glutInitWindowSize(500, 500)
