@@ -1,4 +1,4 @@
-# py_obj_renderer
+# Python .obj Object Renderer
 Very basic implementation of an Obj class that represents a .obj file. This object can then be used with its ```render``` function to be dislayed to a screen using pyopengl.
 
 ## Dependencies
